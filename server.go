@@ -3,7 +3,7 @@ package main
 import(
 	"github.com/gin-gonic/gin"
 	"net/http"
-	//"os"
+	"os"
 )
 
 func main(){
@@ -14,6 +14,6 @@ func main(){
 		})
 	})
 
-	r.Run(":8080")
-	//r.Run(":" + os.Getenv("PORT"))
+	//r.Run(":8080")
+	r.Run(":" + os.Getenv("PORT"))
 }
